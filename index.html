@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AMIPS Salud | Internación Domiciliaria y Asistencia en Casa</title>
+  <meta name="description" content="AMIPS Salud brinda internación domiciliaria, enfermería, kinesiología, cuidados paliativos y atención médica en casa. Cuidado seguro, personalizado y de calidad." />
+  <meta name="keywords" content="internación domiciliaria, atención domiciliaria, enfermería a domicilio, kinesiología, cuidados paliativos, médico a domicilio, AMIPS Salud" />
+  <meta name="theme-color" content="#53AFDD" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AMIPS Salud | Internación Domiciliaria" />
+  <meta property="og:description" content="Equipo interdisciplinario para tu cuidado en casa: médico, enfermería, kinesiología, fonoaudiología, nutrición y más." />
+  <meta property="og:image" content="/images/og-amips-salud.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicons (reemplaza rutas si ya las tenés) -->
+  <link rel="icon" href="/favicons/favicon-32x32.png" sizes="32x32" type="image/png" />
+  <link rel="icon" href="/favicons/favicon-16x16.png" sizes="16x16" type="image/png" />
+  <link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" />
+
+  <!-- Tailwind (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#53AFDD',
+              dark: '#2B8CBA',
+              light: '#D8F7FB'
+            },
+            charcoal: '#212121'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'Arial', 'sans-serif']
+          },
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalOrganization",
+    "name": "AMIPS Salud",
+    "url": "https://www.amipssalud.example",
+    "logo": "https://www.amipssalud.example/images/logo.png",
+    "description": "Internación domiciliaria y asistencia médica en casa.",
+    "medicalSpecialty": ["Homeopathic", "Nursing", "Physiotherapy"],
+    "areaServed": "Argentina",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+54 11 61305523 - +54 11 65635572",
+      "contactType": "customer service",
+      "availableLanguage": ["Spanish"]
+    }
+  }
+  </script>
+  <style>
+    /* Pequeños ajustes de scroll para anclas */
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="font-sans text-charcoal bg-white">
+  <!-- Barra superior -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#inicio" class="flex items-center gap-3" aria-label="Ir al inicio">
+        <div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center text-white font-extrabold">A</div>
+        <span class="sr-only">AMIPS Salud</span>
+        <span class="hidden sm:block text-lg font-semibold tracking-wide">AMIPS Salud</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#servicios" class="hover:text-primary">Servicios</a>
+        <a href="#como-funciona" class="hover:text-primary">Cómo funciona</a>
+        <a href="#cobertura" class="hover:text-primary">Cobertura</a>
+        <a href="#preguntas" class="hover:text-primary">Preguntas</a>
+        <a href="#contacto" class="hover:text-primary">Contacto</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <a href="tel:+54 11 61305523 - +54 11 65635572" class="hidden sm:inline-flex items-center rounded-xl bg-primary px-4 py-2 text-white text-sm font-semibold hover:bg-primary-dark transition">Llamar</a>
+        <a href="https://wa.me/5491161305523" class="inline-flex items-center rounded-xl border border-primary px-4 py-2 text-primary text-sm font-semibold hover:bg-primary/10 transition">WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="inicio" class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-primary/10 to-white"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 grid lg:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">
+          Internación domiciliaria segura y humana
+        </h1>
+        <p class="mt-5 text-lg text-slate-700">
+          En <span class="font-semibold">AMIPS Salud</span> llevamos el hospital a tu casa. Equipo interdisciplinario, planes a medida y coordinación 24/7 para una recuperación acompañada y digna.
+        </p>
+        <div class="mt-7 flex flex-wrap gap-3">
+          <a href="#contacto" class="inline-flex items-center rounded-2xl bg-primary px-6 py-3 text-white font-semibold hover:bg-primary-dark transition">Solicitar evaluación</a>
+          <a href="#servicios" class="inline-flex items-center rounded-2xl border border-slate-300 px-6 py-3 font-semibold hover:border-primary hover:text-primary transition">Ver servicios</a>
+        </div>
+        <div class="mt-6 flex items-center gap-4 text-sm text-slate-600">
+          <div class="flex items-center gap-2"><span aria-hidden="true">✅</span> Profesionales matriculados</div>
+          <div class="flex items-center gap-2"><span aria-hidden="true">✅</span> Cobertura con prepagas/obras sociales*</div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="aspect-video rounded-3xl bg-primary-light border border-slate-200 overflow-hidden shadow-2xl">
+          <!-- Reemplazar por imagen/ilustración propia -->
+          <img src="https://images.unsplash.com/photo-1580281780460-82d277b0e3f1?q=80&w=1600&auto=format&fit=crop" alt="Profesionales de salud brindando cuidados en casa" class="w-full h-full object-cover" />
+        </div>
+        <div class="absolute -bottom-6 -right-4 bg-white border border-slate-200 rounded-2xl p-4 shadow-xl hidden sm:flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">💙</div>
+          <p class="text-sm"><span class="font-semibold">Satisfacción 4.9/5</span><br><span class="text-slate-600">más de 1.200 familias</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="py-16 sm:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-extrabold">Servicios de internación y atención en casa</h2>
+        <p class="mt-3 text-slate-700">Planificamos junto a tu médico de cabecera y tu prepaga para garantizar continuidad de cuidados.</p>
+      </div>
+
+      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Card -->
+        <article class="rounded-2xl border border-slate-200 p-6 hover:shadow-lg transition bg-white">
+          <h3 class="text-xl font-semibold">Internación domiciliaria integral</h3>
+          <p class="mt-2 text-slate-700">Coordinación médica, enfermería 24/7, monitoreo de signos, medicación y equipamiento.</p>
+          <ul class="mt-3 list-disc list-inside text-sm text-slate-600 space-y-1">
+            <li>Plan de cuidados personalizado</li>
+            <li>Historia clínica digital</li>
+            <li>Visitas programadas y a demanda</li>
+          </ul>
+        </article>
+        <article class="rounded-2xl border border-slate-200 p-6 hover:shadow-lg transition bg-white">
+          <h3 class="text-xl font-semibold">Enfermería y curaciones</h3>
+          <p class="mt-2 text-slate-700">Curación de heridas, vías, sondas, administración de medicación y control de dolor.</p>
+        </article>
+        <article class="rounded-2xl border border-slate-200 p-6 hover:shadow-lg transition bg-white">
+          <h3 class="text-xl font-semibold">Kinesiología y rehabilitación</h3>
+          <p class="mt-2 text-slate-700">Planes de movilidad, fortalecimiento y prevención de caídas. Neuro y respiratoria.</p>
+        </article>
+        <article class="rounded-2xl border border-slate-200 p-6 hover:shadow-lg transition bg-white">
+          <h3 class="text-xl font-semibold">Cuidados paliativos</h3>
+          <p class="mt-2 text-slate-700">Abordaje del dolor, apoyo psicosocial y acompañamiento familiar.</p>
+        </article>
+        <article class="rounded-2xl border border-slate-200 p-6 hover:shadow-lg transition bg-white">
+          <h3 class="text-xl font-semibold">Fonoaudiología y nutrición</h3>
+          <p class="mt-2 text-slate-700">Deglución, comunicación, planes alimentarios y soporte enteral.</p>
+        </article>
+        <article class="rounded-2xl border border-slate-200 p-6 hover:shadow-lg transition bg-white">
+          <h3 class="text-xl font-semibold">Equipamiento y suministros</h3>
+          <p class="mt-2 text-slate-700">Camas, oxigenoterapia, bombas de infusión y más. Entrega y retiro a domicilio.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cómo funciona -->
+  <section id="como-funciona" class="py-16 sm:py-20 bg-primary-light">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold">¿Cómo funciona?</h2>
+          <p class="mt-3 text-slate-700">Simple y rápido. Te acompañamos en cada paso para que puedas quedarte en casa con total seguridad.</p>
+          <ol class="mt-6 space-y-4">
+            <li class="flex gap-4">
+              <div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold">1</div>
+              <div>
+                <h3 class="font-semibold">Evaluación inicial</h3>
+                <p class="text-slate-700">Con tu indicación médica, coordinamos una visita para valorar necesidades y recursos del hogar.</p>
+              </div>
+            </li>
+            <li class="flex gap-4">
+              <div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold">2</div>
+              <div>
+                <h3 class="font-semibold">Plan de cuidados</h3>
+                <p class="text-slate-700">Diseñamos objetivos, frecuencia de visitas y equipo profesional. Gestionamos con tu prepaga/obra social.</p>
+              </div>
+            </li>
+            <li class="flex gap-4">
+              <div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold">3</div>
+              <div>
+                <h3 class="font-semibold">Inicio y seguimiento</h3>
+                <p class="text-slate-700">Implementamos el plan, monitoreamos evolución y ajustamos en conjunto con tu médico tratante.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-xl">
+          <h3 class="text-xl font-semibold">Beneficios de la internación en casa</h3>
+          <ul class="mt-4 grid sm:grid-cols-2 gap-4 text-slate-700">
+            <li class="p-4 rounded-2xl bg-primary/5 border border-primary/20">Menor riesgo de infecciones</li>
+            <li class="p-4 rounded-2xl bg-primary/5 border border-primary/20">Mayor comodidad y descanso</li>
+            <li class="p-4 rounded-2xl bg-primary/5 border border-primary/20">Acompañamiento familiar</li>
+            <li class="p-4 rounded-2xl bg-primary/5 border border-primary/20">Ahorro de traslados y tiempos</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cobertura -->
+  <section id="cobertura" class="py-16 sm:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold">Cobertura y alcance</h2>
+          <p class="mt-3 text-slate-700">Trabajamos con principales <span class="font-semibold">prepagas y obras sociales</span>. También opciones particulares con planes flexibles.</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <span class="px-4 py-2 rounded-full bg-primary/10 text-primary text-sm border border-primary/20">OSDE</span>
+            <span class="px-4 py-2 rounded-full bg-primary/10 text-primary text-sm border border-primary/20">Swiss Medical</span>
+            <span class="px-4 py-2 rounded-full bg-primary/10 text-primary text-sm border border-primary/20">Galeno</span>
+            <span class="px-4 py-2 rounded-full bg-primary/10 text-primary text-sm border border-primary/20">Medicus</span>
+            <span class="px-4 py-2 rounded-full bg-primary/10 text-primary text-sm border border-primary/20">PAMI</span>
+            <span class="px-4 py-2 rounded-full bg-primary/10 text-primary text-sm border border-primary/20">Otras</span>
+          </div>
+          <p class="mt-3 text-xs text-slate-500">*La cobertura puede variar según plan. Verificamos y gestionamos tu solicitud sin cargo.</p>
+        </div>
+        <div class="rounded-3xl border border-slate-200 p-6 bg-primary-light">
+          <h3 class="text-xl font-semibold">Zonas de atención</h3>
+          <p class="mt-2 text-slate-700">AMBA y principales ciudades del país. Consultanos por tu localidad.</p>
+          <div class="mt-4 grid grid-cols-2 sm:grid-cols-3 gap-3 text-sm">
+            <span class="p-3 rounded-xl bg-white border border-slate-200">CABA</span>
+            <span class="p-3 rounded-xl bg-white border border-slate-200">Norte</span>
+            <span class="p-3 rounded-xl bg-white border border-slate-200">Oeste</span>
+            <span class="p-3 rounded-xl bg-white border border-slate-200">Sur</span>
+            <span class="p-3 rounded-xl bg-white border border-slate-200">La Plata</span>
+            <span class="p-3 rounded-xl bg-white border border-slate-200">Rosario</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section class="py-16 sm:py-20 bg-primary-light">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-extrabold">Lo que dicen las familias</h2>
+        <p class="mt-3 text-slate-700">Su experiencia es nuestra mejor referencia.</p>
+      </div>
+
+      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <figure class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <blockquote class="text-slate-800">“El trato humano y la organización fueron impecables. Pudimos estar en casa y sentirnos seguros.”</blockquote>
+          <figcaption class="mt-3 text-sm text-slate-600">— María G.</figcaption>
+        </figure>
+        <figure class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <blockquote class="text-slate-800">“Excelente equipo de enfermería y kinesiología. La evolución fue notoria desde la primera semana.”</blockquote>
+          <figcaption class="mt-3 text-sm text-slate-600">— Jorge R.</figcaption>
+        </figure>
+        <figure class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <blockquote class="text-slate-800">“Nos acompañaron en cada decisión, con respeto y claridad. Súper recomendables.”</blockquote>
+          <figcaption class="mt-3 text-sm text-slate-600">— Laura P.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Preguntas frecuentes -->
+  <section id="preguntas" class="py-16 sm:py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-center">Preguntas frecuentes</h2>
+      <div class="mt-8 divide-y divide-slate-200 border border-slate-200 rounded-2xl overflow-hidden">
+        <!-- Item -->
+        <details class="group p-6" open>
+          <summary class="flex cursor-pointer list-none items-center justify-between font-semibold">
+            ¿Qué es la internación domiciliaria?
+            <span class="transition group-open:rotate-180">⌄</span>
+          </summary>
+          <p class="mt-2 text-slate-700">Es una modalidad de atención que traslada al hogar cuidados que tradicionalmente se realizan en el hospital, con estándares de seguridad y seguimiento profesional.</p>
+        </details>
+        <details class="group p-6">
+          <summary class="flex cursor-pointer list-none items-center justify-between font-semibold">
+            ¿Cómo gestionan la cobertura con mi prepaga?
+            <span class="transition group-open:rotate-180">⌄</span>
+          </summary>
+          <p class="mt-2 text-slate-700">Nos ocupamos de evaluar la indicación, preparar la documentación y tramitar la autorización. Te acompañamos en todo el proceso.</p>
+        </details>
+        <details class="group p-6">
+          <summary class="flex cursor-pointer list-none items-center justify-between font-semibold">
+            ¿Hay equipo 24/7 para urgencias?
+            <span class="transition group-open:rotate-180">⌄</span>
+          </summary>
+          <p class="mt-2 text-slate-700">Sí. Contamos con línea de coordinación activa las 24 horas para contingencias y visitas a demanda según necesidad clínica.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-16 sm:py-20 bg-gradient-to-b from-white to-primary-light">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-extrabold">Hablemos de tu plan en casa</h2>
+        <p class="mt-3 text-slate-700">Completá el formulario y coordinamos una evaluación sin cargo.</p>
+      </div>
+
+      <form class="mt-8 grid sm:grid-cols-2 gap-4 rounded-2xl border border-slate-200 bg-white p-6">
+        <div>
+          <label for="nombre" class="text-sm font-medium">Nombre y apellido</label>
+          <input id="nombre" name="nombre" type="text" required class="mt-1 w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Ej: Ana Pérez" />
+        </div>
+        <div>
+          <label for="telefono" class="text-sm font-medium">Teléfono</label>
+          <input id="telefono" name="telefono" type="tel" required class="mt-1 w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Ej: +54 11 61305523 - +54 11 65635572" />
+        </div>
+        <div>
+          <label for="email" class="text-sm font-medium">Email</label>
+          <input id="email" name="email" type="email" class="mt-1 w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Ej: ana@mail.com" />
+        </div>
+        <div>
+          <label for="prepaga" class="text-sm font-medium">Prepaga / Obra Social</label>
+          <input id="prepaga" name="prepaga" type="text" class="mt-1 w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Ej: OSDE 210" />
+        </div>
+        <div class="sm:col-span-2">
+          <label for="mensaje" class="text-sm font-medium">Contanos tu caso</label>
+          <textarea id="mensaje" name="mensaje" rows="4" class="mt-1 w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Ej: alta hospitalaria próxima, requiere kinesiología y enfermería diaria..."></textarea>
+        </div>
+        <div class="sm:col-span-2 flex items-center justify-between">
+          <p class="text-xs text-slate-500">Al enviar aceptás nuestra política de privacidad.</p>
+          <button type="submit" class="inline-flex items-center rounded-2xl bg-primary px-6 py-3 text-white font-semibold hover:bg-primary-dark transition">Enviar consulta</button>
+        </div>
+      </form>
+
+      <div class="mt-6 flex flex-wrap items-center justify-center gap-3 text-sm">
+        <a href="tel:+54 11 61305523 - +54 11 65635572" class="inline-flex items-center gap-2 rounded-xl border border-slate-300 px-4 py-2 hover:border-primary hover:text-primary transition">📞 +54 11 61305523 - +54 11 65635572</a>
+        <a href="amipsalud21@gmail.com" class="inline-flex items-center gap-2 rounded-xl border border-slate-300 px-4 py-2 hover:border-primary hover:text-primary transition">✉️ contacto@amips.com</a>
+        <a href="https://wa.me/5491161305523" class="inline-flex items-center gap-2 rounded-xl border border-slate-300 px-4 py-2 hover:border-primary hover:text-primary transition">💬 WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid gap-8 sm:grid-cols-3">
+      <div>
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center text-white font-extrabold">A</div>
+          <span class="font-semibold">AMIPS Salud</span>
+        </div>
+        <p class="mt-3 text-sm text-slate-600">Internación y cuidados domiciliarios con vocación y calidez humana.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold">Enlaces</h4>
+        <ul class="mt-3 space-y-2 text-sm text-slate-700">
+          <li><a href="#servicios" class="hover:text-primary">Servicios</a></li>
+          <li><a href="#como-funciona" class="hover:text-primary">Cómo funciona</a></li>
+          <li><a href="#preguntas" class="hover:text-primary">Preguntas frecuentes</a></li>
+          <li><a href="#contacto" class="hover:text-primary">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold">Contacto</h4>
+        <ul class="mt-3 space-y-2 text-sm text-slate-700">
+          <li>📍 CABA y Gran Buenos Aires</li>
+          <li>📞 +54 11 61305523 - +54 11 65635572</li>
+          <li>✉️ contacto@amips.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-slate-200 text-center py-5 text-xs text-slate-500">
+      © <span id="y"></span> AMIPS Salud. Todos los derechos reservados.
+    </div>
+  </footer>
+
+  <!-- Acciones flotantes -->
+  <div class="fixed bottom-5 right-5 flex flex-col gap-3">
+    <a href="https://wa.me/5491161305523" aria-label="Hablar por WhatsApp" class="w-12 h-12 rounded-full bg-green-500 text-white grid place-items-center shadow-lg hover:opacity-90 transition">✆</a>
+    <a href="#contacto" class="w-12 h-12 rounded-full bg-primary text-white grid place-items-center shadow-lg hover:opacity-90 transition" aria-label="Ir al formulario">✉️</a>
+  </div>
+
+  <script>
+    // Año dinámico en el footer
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Manejo básico del formulario (demo)
+    document.querySelector('form')?.addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('¡Gracias! Te contactaremos a la brevedad.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
