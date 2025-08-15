@@ -1,0 +1,7 @@
+body {
+  scroll-behavior: smooth;
+}
+
+.hover\:bg-primary-dark:hover {
+  background-color: #2B8CBA;
+}
